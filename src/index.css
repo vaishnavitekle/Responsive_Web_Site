@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #F5F5F5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+.pro{
+    @apply inline-block list-none m-[5px_20px] text-[16px];
+}
+.btn{
+    @apply bg-[#FFF] text-[#212121] p-[14px_25px] text-[15px] rounded-[30px] cursor-pointer border-0 outline-none;
+}
+.con{
+    @apply  pl-[10%] pr-[10%];
+}
+
+@media (max-width:1200px){
+    .con{
+        @apply pl-[5%] pr-[5%];
+    }
+    .btn{
+        .logo{
+          @apply w-[140px];
+        }
+        .pro{
+            @apply m-[10px_15px];
+        }
+    }
+}
+
+@media (max-width:950px){
+    .con{
+        @apply p-[15px_0];
+    }
+    .ul1{
+        @apply fixed top-0 bottom-0 right-0 bg-[#212EA0] z-[-1] w-[200px] pt-[70px] transition duration-500;
+    }
+    .pro{
+            @apply block m-[25px_40px];
+        }
+    .btn{
+        @apply p-[10px_15px]
+    }
+}
